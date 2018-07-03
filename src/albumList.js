@@ -1,10 +1,10 @@
 function createMarkup(data) {
   return data.map(album => `
-    <div class="list-item">
-      <img src="${album.images[2].url}" alt="${album.name}" class="list-img">
-      <div class="list-description">
-        <div class="list-title">${album.name}</div>
-        <div class="list-subtitle">${album.artists[0].name}</div>
+    <div class="list-item" data-album-id="${album.id}">
+      <img src="${album.images[2].url}" alt="${album.name}" class="list-img" data-album-id="${album.id}">
+      <div class="list-description" data-album-id="${album.id}">
+        <div class="list-title" data-album-id="${album.id}">${album.name}</div>
+        <div class="list-subtitle" data-album-id="${album.id}">${album.artists[0].name}</div>
       </div>
     </div>`).join('');
 }

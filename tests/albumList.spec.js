@@ -38,11 +38,11 @@ const data = [
 
 
 const markup = `
-    <div class="list-item">
-      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-img">
-      <div class="list-description">
-        <div class="list-title">${data[0].name}</div>
-        <div class="list-subtitle">${data[0].artists[0].name}</div>
+    <div class="list-item" data-album-id="${data[0].id}">
+      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-img" data-album-id="${data[0].id}">
+      <div class="list-description" data-album-id="${data[0].id}">
+        <div class="list-title" data-album-id="${data[0].id}">${data[0].name}</div>
+        <div class="list-subtitle" data-album-id="${data[0].id}">${data[0].artists[0].name}</div>
       </div>
     </div>`;
 
@@ -106,18 +106,18 @@ const data2 = [
 ];
 
 const markup2 = `
-    <div class="list-item">
-      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-img">
-      <div class="list-description">
-        <div class="list-title">${data[0].name}</div>
-        <div class="list-subtitle">${data[0].artists[0].name}</div>
+    <div class="list-item" data-album-id="${data[0].id}">
+      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-img" data-album-id="${data[0].id}">
+      <div class="list-description" data-album-id="${data[0].id}">
+        <div class="list-title" data-album-id="${data[0].id}">${data[0].name}</div>
+        <div class="list-subtitle" data-album-id="${data[0].id}">${data[0].artists[0].name}</div>
       </div>
     </div>
-    <div class="list-item">
-      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-img">
-      <div class="list-description">
-        <div class="list-title">${data[0].name}</div>
-        <div class="list-subtitle">${data[0].artists[0].name}</div>
+    <div class="list-item" data-album-id="${data[0].id}">
+      <img src="${data[0].images[2].url}" alt="${data[0].name}" class="list-img" data-album-id="${data[0].id}">
+      <div class="list-description" data-album-id="${data[0].id}">
+        <div class="list-title" data-album-id="${data[0].id}">${data[0].name}</div>
+        <div class="list-subtitle" data-album-id="${data[0].id}">${data[0].artists[0].name}</div>
       </div>
     </div>`;
 
